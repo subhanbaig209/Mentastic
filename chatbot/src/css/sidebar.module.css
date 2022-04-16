@@ -1,0 +1,28 @@
+@import url("globals.module.css");
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 200px;
+    padding: 20px;
+    background-color: var(--iconBackground);
+    transition: background-color 0.5s;
+}
+
+.icon:hover {
+    background-color: var(--navColor);
+    cursor: pointer;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--navColor);
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    border: 1px solid var(--navColor);
+    height: 800px;
+}
