@@ -1,5 +1,7 @@
+import React from "react";
 
-<svg width="100%" height="100%" viewBox="0 0 165 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+let Logo = () => {
+    <svg width="100%" height="100%" viewBox="0 0 165 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(1,0,0,1,-858.639,-238.369)">
         <g id="Aesthetic-Pebbles" serif:id="Aesthetic Pebbles" transform="matrix(0.367412,0.367412,-0.367412,0.367412,1254.29,-752.286)">
             <g transform="matrix(0.707107,-0.707107,0.707107,0.707107,-1097.02,1131.96)">
@@ -77,3 +79,6 @@
         </g>
     </g>
 </svg>
+}
+
+export default Logo;
