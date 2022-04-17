@@ -7,22 +7,10 @@ import MessageParser from "./chatbot/MessageParser";
 import config from "./chatbot/config";
 import ActionProvider from "./chatbot/ActionProvider";
 import "./css/styles.css"
+import Dashboard from "./pages/dasboard";
 
 const App = () => (
-    <div className={styles.page}>
-        <SideBar />
-        <div className={styles.content}>
-          <TopBar/>
-          <Body />
-        </div>
-        <Chatbot
-        config={config}
-        messageParser={MessageParser}
-        actionProvider={ActionProvider}
-        />
-    </div>
-
-    
+    <Dashboard />
 );
 
 export default App;
