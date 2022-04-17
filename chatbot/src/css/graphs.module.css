@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-right: 50px;
+    margin-right: px;
 }
 
 
@@ -87,7 +87,7 @@
     color: black;
     font-size: 30px;
     font-family: "Gilroy Extra-Bold";
-    margin-right: 300px;
+    margin-right: 100px;
 }
 
 .divider {
@@ -106,7 +106,7 @@
     color: black;
     font-size: 30px;
     font-family: "Gilroy Extra-Bold";
-    margin-left: 150px;
+    margin-left: 100px;
     margin-bottom: 20px;
 }
 
@@ -115,6 +115,7 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 300px;
+    width: 100px;
 }
 
 .submit {
@@ -133,4 +134,8 @@
 .submit:hover {
     background-color: white;
     color: red;
+}
+
+.formInfo {
+    width: 450px;
 }

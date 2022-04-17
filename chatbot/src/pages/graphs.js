@@ -9,7 +9,7 @@ import "chart.js/auto";
 import {useState} from "react"
 
 let Body = () => {
-  let [stress, setStress] = useState(0);
+  let [stress, setStress] = useState(1);
   let [mood, setMood] = useState(0);
   let [hasSubmit, setHasSubmit] = useState(false);
   let [sunStress, setSunStress] = useState(10);
@@ -58,6 +58,11 @@ let Body = () => {
         "#C4D34C",
         "#F7464A",
         "#A23453"
+      ],
+      labels: [
+        "High",
+        "Medium",
+        "Normal"
       ]
     }]
   }
@@ -106,14 +111,14 @@ let Body = () => {
             them so that you can gain a better of understanding of your daily health.</p>
           </div>
           <div className={styles.form}>
-          <p className={styles.moodDescr}>How would you describe you overall mood?</p>
+          <p className={styles.formInfo}>How would you describe you overall mood?</p>
             <select onChange={moodLevel}>
               <option value="1">Low</option>
               <option value="1">Medium</option>
               <option value="1">High</option>
             </select>
 
-            <p className={styles.moodDescr}>How Stressed would you say you are today?</p>
+            <p className={styles.formInfo}>How Stressed would you say you are today?</p>
             <select onChange={stressLevel}>
               <option value="1">1</option>
               <option value="2">2</option>
