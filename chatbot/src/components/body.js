@@ -10,6 +10,7 @@ let CardTemp = (props) => {
                 <Card.Subtitle className={styles.sub}>{props.sub}</Card.Subtitle>
                 <Card.Text className={styles.text}>{props.text}</Card.Text>
         </Card>
+
     )
 }
 
