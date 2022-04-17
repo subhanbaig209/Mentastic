@@ -34,7 +34,7 @@ router.post("/", async (req, res) => {
 			to: req.body.email,
 			from: 'mentastichackdavis@gmail.com',
 			subject: 'Registered email using Twilio Email API',
-			text: 'Make sure to check out our features, which range from a chatbot to a viewing your insights!',
+			text: 'Welcome to Mentastic! Make sure to check out our features, which range from a chatbot to a viewing your insights! This app was developed by Hashim Chaudry and Subhan Baig for HackDavis 2022.',
 		
 		};
 		sgmail.send(message)
