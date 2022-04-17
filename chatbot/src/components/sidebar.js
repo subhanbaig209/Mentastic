@@ -3,18 +3,17 @@ import {AiOutlineHome} from "react-icons/ai"
 import {BsFillChatSquareDotsFill} from "react-icons/bs"
 import {AiFillSetting} from "react-icons/ai"
 import styles from "../css/sidebar.module.css";
-import {ReactComponent as Logo} from "../assets/logo.svg";
 
 let SideBarNav = () => {
-    let size = "40px";
-    let color = "white";
+    let size = "30px";
+    let color = "#152238";
     return(
         <div className={styles.sidebar}>
             <div className={styles.logo}>
-                <Logo />
+                <img src="../assets/Logo.png"/>
             </div>
 
-            <div>
+            <div className={styles.iconContainer}>
                 <div className={styles.icon}>
                     <AiOutlineHome color={color} size={size}/>
                 </div>

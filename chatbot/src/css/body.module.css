@@ -1,0 +1,52 @@
+.container {
+    background-color: #f4f4f4;
+    flex-grow: 1;
+    width: 96%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+
+.welcomeCard {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    border-radius: 50px;
+    background-image: url("../assets/background.jpg");
+    background-size: 2000px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.welcomeTitle {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    font-family: "Gilroy Extra-Bold";
+}
+
+.welcomeText {
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.welcomeText:hover {
+    cursor: pointer
+}
+
+.welcomeSub {
+    font-weight: bold;
+    margin-top: 10px;
+    color:white;
+    font-size: 25px;
+    font-family: "Gilroy Extra-Bold";
+}

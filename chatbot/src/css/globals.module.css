@@ -1,7 +1,7 @@
 body {
     --navColor: #d0d0d0;
     --iconBackground: #484848;
-    height: 100%;
+    height: 3000px;
 }
 
 .page {
@@ -10,7 +10,25 @@ body {
     flex-direction: row;
 }
 
+
 .content {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../assets/fonts/centrury-gothic/TTF/Century\ Gothic.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Light";
+    src: url("../assets/fonts/montserrat/Montserrat-Light.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "Gilroy Extra-Bold";
+    src: url("../assets/fonts/gilroy/OTF/Gilroy-ExtraBold.otf") format("opentype");
 }
