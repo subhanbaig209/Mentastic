@@ -10,6 +10,12 @@
     margin-right: 100px;
 }
 
+.serviceCards1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
 
 .welcomeCard {
     margin-top: 30px;
@@ -22,6 +28,46 @@
     padding-top: 15px;
     padding-left: 20px;
 }
+
+.card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    width: 400px;
+    height: 200px;
+    border-radius: 50px;
+    background-color: white;
+    background-size: 2000px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.title {
+    margin-top: 20px;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    font-family: "Gilroy Extra-Bold";
+}
+
+.text {
+    color: black;
+    font-size: 15px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.sub {
+    width: 250px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #b1b1b1;
+    font-size: 15px;
+    font-family: "Century Gothic";
+}
+
 
 .welcomeTitle {
     font-weight: bold;
@@ -49,4 +95,10 @@
     color:white;
     font-size: 25px;
     font-family: "Gilroy Extra-Bold";
+}
+
+.services {
+    font-family: "Gilroy Extra-Bold";
+    align-self: flex-start;
+    margin-left: 150px;
 }

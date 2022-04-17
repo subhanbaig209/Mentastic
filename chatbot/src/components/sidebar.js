@@ -3,6 +3,7 @@ import {AiOutlineHome} from "react-icons/ai"
 import {BsFillChatSquareDotsFill} from "react-icons/bs"
 import {AiFillSetting} from "react-icons/ai"
 import styles from "../css/sidebar.module.css";
+import Logo from "../assets/Logo.png";
 
 let SideBarNav = () => {
     let size = "30px";
@@ -10,7 +11,7 @@ let SideBarNav = () => {
     return(
         <div className={styles.sidebar}>
             <div className={styles.logo}>
-                <img src="../assets/Logo.png"/>
+                <img className={styles.logoImg} src={Logo}/>
             </div>
 
             <div className={styles.iconContainer}>

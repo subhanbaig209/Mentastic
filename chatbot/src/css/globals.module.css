@@ -1,13 +1,13 @@
 body {
     --navColor: #d0d0d0;
     --iconBackground: #484848;
-    height: 3000px;
 }
 
 .page {
     height: 100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
 }
 
 

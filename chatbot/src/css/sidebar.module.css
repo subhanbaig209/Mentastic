@@ -21,7 +21,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100px;
-    margin-top: 50px;
+    margin-top: 35px;
+}
+
+.logoImg {
+    width: 50px;
 }
