@@ -18,7 +18,6 @@ const App = () => (
         <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/graphs" element={<Graphs />} />
-
         </Routes>
     </Router>
 );
