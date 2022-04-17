@@ -25,3 +25,9 @@ We learned how to create a dynamic user interface with React libraries such as C
 <h1>What's next for Mentastic:</h1>
 
 We plan to make the dashboard much more customizable for user experience. This includes adding more metrics, resources, and add more services for the user. We also plan to implement the Twilio SMS API with the chatbot we created so that the user can speak to a mental health professional on their phone. We are also planning to create predictive models in our insights page so that we can better help our users plan out their day.
+
+<h1> How to Run </h1>
+1. clone the repository
+2. cd chatbot and npm i
+3. cd backend and npm i
+4. npm start
