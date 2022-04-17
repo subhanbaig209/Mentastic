@@ -7,10 +7,20 @@ import MessageParser from "./chatbot/MessageParser";
 import config from "./chatbot/config";
 import ActionProvider from "./chatbot/ActionProvider";
 import "./css/styles.css"
-import Dashboard from "./pages/dasboard";
+import Graphs from "./pages/graphs";
+import Dashboard from "./pages/dashboard";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 
 const App = () => (
-    <Dashboard />
+
+    <Router>
+        <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/graphs" element={<Graphs />} />
+
+        </Routes>
+    </Router>
 );
 
 export default App;

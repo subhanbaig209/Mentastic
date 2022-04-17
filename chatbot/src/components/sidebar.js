@@ -5,8 +5,11 @@ import {AiFillSetting} from "react-icons/ai"
 import {GoGraph} from "react-icons/go"
 import styles from "../css/sidebar.module.css";
 import Logo from "../assets/Logo.png";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 
 let SideBarNav = () => {
+    
     let size = "30px";
     let color = "#152238";
     return(
@@ -23,7 +26,7 @@ let SideBarNav = () => {
                     <BsFillChatSquareDotsFill color={color} size={size}/>
                 </div>
                 <div className={styles.icon}>
-                    <GoGraph color={color} size={size}/>
+                    <GoGraph  color={color} size={size}/>
                 </div>
                 <div className={styles.icon}>
                     <AiFillSetting color={color} size={size}/>

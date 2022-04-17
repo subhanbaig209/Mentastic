@@ -1,4 +1,4 @@
-import SideBar from "../../src/components/sidebar"
+import SideBar from "../components/sidebar"
 import styles from "../../src/css/globals.module.css"
 import TopBar from "../components/topbar";
 import Body from "../components/body"
