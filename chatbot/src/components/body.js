@@ -26,16 +26,19 @@ let Body = () => {
             </Card>
         </div>
         <h2 className={styles.services}>Services</h2> 
-
-        <div className={styles.serviceCards1}>
-            <CardTemp title="Chat Now" sub="Chat with our real-time bot now for assistance"/>
-            <CardTemp title="Your progress" sub="See your progress over time"/>
+        <div className={styles.serviceCardsCont}>
+            <div className={styles.serviceCards1}>
+                <CardTemp title="Chat Now" sub="Chat with our real-time bot now for assistance"/>
+                <CardTemp title="Your progress" sub="See your progress over time"/>
+            </div>
         </div>
-
-        <div className={styles.serviceCards1}>
-            <CardTemp title="Schedule an Appointment" sub="Schedule an appointment with a trained professional"/>
-            <CardTemp title="Resources" sub="Find resources to help out"/>
+        <div className={styles.serviceCardsCont}>
+            <div className={styles.serviceCards1}>
+                <CardTemp title="Schedule an Appointment" sub="Schedule an appointment with a trained professional"/>
+                <CardTemp title="Resources" sub="Find resources to help out"/>
+            </div>
         </div>
+        
     </div>
     )
 }
