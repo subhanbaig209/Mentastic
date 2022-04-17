@@ -3,6 +3,9 @@ import styles from "../css/body.module.css"
 import {Card} from "react-bootstrap"
 import CardImage from "../assets/cardImage.png"
 
+import { useNavigate } from "react-router-dom";
+
+
 let CardTemp = (props) => {
     return (
         <Card className={styles.card}>
@@ -15,13 +18,18 @@ let CardTemp = (props) => {
 }
 
 let Body = () => {
+    let navigate = useNavigate();
+    const goToSignUp = () => {
+        navigate("/signup");
+    }
+
     return (
     <div className={styles.container}>
         <div className={styles.welcomeCard}>
             <Card className={styles.welcomeCard}>
                 <Card.Title className={styles.welcomeTitle}>Welcome</Card.Title>
                 <Card.Subtitle className={styles.welcomeSub} >We're here to help</Card.Subtitle>
-                <Card.Text className={styles.welcomeText}>
+                <Card.Text className={styles.welcomeText} onClick={goToSignUp}>
                 Get Started
                 </Card.Text>
             </Card>

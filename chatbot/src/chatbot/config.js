@@ -17,7 +17,7 @@ import LinkList from "../components/Options/Links";
 const config = {
   botName: "QuizBot",
   initialMessages: [
-    createChatBotMessage(`Hey Subhan. How has your day been?`, {
+    createChatBotMessage(`Hi! How has your day been?`, {
       withAvatar: false,
       delay: 100,
       widget: "options"

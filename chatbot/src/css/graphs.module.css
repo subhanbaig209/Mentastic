@@ -1,0 +1,141 @@
+.container {
+    background-color: #f4f4f4;
+    flex-grow: 1;
+    width: 96%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: px;
+}
+
+
+.welcomeCard {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    border-radius: 50px;
+    background-image: url("../assets/background.jpg");
+    background-size: 2000px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+
+
+.welcomeTitle {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    font-family: "Gilroy Extra-Bold";
+}
+
+.welcomeText {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.welcomeText:hover {
+    cursor: pointer
+}
+
+.welcomeSub {
+    font-weight: bold;
+    margin-top: 10px;
+    color:white;
+    font-size: 25px;
+    font-family: "Gilroy Extra-Bold";
+}
+
+.mood {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+}
+
+.moodInfo {
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    font-family: "Gilroy Extra-Bold";
+    margin-left: 300px;
+}
+
+.moodDescr {
+    font-size: 15px;
+    font-family: "Montserrat Light";
+    width: 550px;
+}
+
+.chart {
+    width: 600px;
+}
+
+.stress {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+
+}
+
+.stressInfo {
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    font-family: "Gilroy Extra-Bold";
+    margin-right: 100px;
+}
+
+.divider {
+    width: 90%;
+}
+
+.survey {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-self: flex-start;
+}
+
+.surveyInfo {
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    font-family: "Gilroy Extra-Bold";
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 300px;
+    width: 100px;
+}
+
+.submit {
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    width: 80px;
+    text-align: center;
+    border-radius: 80px;
+    transition: background-color 0.5s color 0.5s;
+    border: none;
+}
+
+.submit:hover {
+    background-color: white;
+    color: red;
+}
+
+.formInfo {
+    width: 450px;
+}

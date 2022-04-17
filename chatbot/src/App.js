@@ -10,17 +10,25 @@ import "./css/styles.css"
 import Graphs from "./pages/graphs";
 import Dashboard from "./pages/dashboard";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Login from "./pages/login/login";
+import Signup from "./pages/signup/signup";
+import { Navigate } from "react-router-dom";
 
 
-const App = () => (
+function App() {
+	const user = localStorage.getItem("token");
 
-    <Router>
-        <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/graphs" element={<Graphs />} />
-
-        </Routes>
-    </Router>
-);
+	return (
+        <Router>
+		<Routes>
+			{user && <Route path="/" exact element={<Dashboard />} />}
+			<Route path="/signup" exact element={<Signup />} />
+			<Route path="/login" exact element={<Login />} />
+            <Route path="/graphs" exact element={<Graphs />} />
+			<Route path="/" element={<Navigate replace to="/login" />} />
+		</Routes>
+        </Router>
+	);
+}
 
 export default App;

@@ -1,4 +1,5 @@
 import SideBar from "../components/sidebar"
+import {react, useState} from "react";
 import styles from "../../src/css/globals.module.css"
 import TopBar from "../components/topbar";
 import Body from "../components/body"
@@ -9,18 +10,31 @@ import ActionProvider from "../chatbot/ActionProvider";
 import "../css/styles.css"
 
 let Dashboard = () => {
+    const [showBot, setBot] = useState(true);
+
+    const handleLogout = () => {
+		localStorage.removeItem("token");
+		window.location.reload();
+	};
+  function handleBot() {
+    const botState = !showBot;
+    setBot(botState);
+  }
+
     return (
         <div className={styles.page}>
-        <SideBar />
+        <SideBar handleBot={handleBot}/>
         <div className={styles.content}>
-            <TopBar/>
-            <Body />
+            <TopBar handleLogout = {handleLogout}/>
+            <Body/>
         </div>
+        {showBot && (
         <Chatbot
-            config={config}
-            messageParser={MessageParser}
-            actionProvider={ActionProvider}
+          config={config}
+          messageParser={MessageParser}
+          actionProvider={ActionProvider}
         />
+      )}
     </div>
     );
     
