@@ -38,7 +38,7 @@ let Body = () => {
         <div className={styles.serviceCardsCont}>
             <div className={styles.serviceCards1}>
                 <CardTemp title="Chat Now" sub="Chat with our real-time bot now for assistance"/>
-                <CardTemp title="Your progress" sub="See your progress over time"/>
+                <CardTemp title="Your Insights" sub="See your progress over time through personalized graphs"/>
             </div>
         </div>
         <div className={styles.serviceCardsCont}>

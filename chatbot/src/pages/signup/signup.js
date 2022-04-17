@@ -76,6 +76,7 @@ const Signup = () => {
 							required
 							className={styles.input}
 						/>
+                        
 						<input
 							type="password"
 							placeholder="Password"
